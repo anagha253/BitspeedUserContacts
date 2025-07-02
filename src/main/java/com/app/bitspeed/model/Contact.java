@@ -12,11 +12,15 @@ import jakarta.persistence.PreUpdate;
 import jakarta.persistence.Table;
 import java.sql.Timestamp;
 import java.time.LocalDateTime;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Entity
 @Data
 @Table(name = "contact")
+@NoArgsConstructor
+@AllArgsConstructor
 public class Contact {
 
   @Id
